@@ -1,0 +1,75 @@
+// border-radius value
+$border-radius: 10px;
+
+/*
+* Overriding grid breakpoints
+*/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  widescreen: 1600px
+);
+
+// scss-docs-end grid-breakpoints
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 768px,
+  xl: 1024px,
+  xxl: 1200px,
+  widescreen: 1440px
+);
+// scss-docs-end container-max-widths
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+/*
+* apply font sizes for headings
+*/
+$headings: () !default;
+$headings: map-merge((
+    h1: 3.5em,
+    h2: 3.25em,
+    h3: 2.5em,
+    h4: 2em,
+    h5: 1.5em,
+    p: 1em,
+    span: 1em
+), $headings);
+
+/*
+* Apply list of line heights for each heading
+*/
+$line-heights: () !default;
+$line-heights: map-merge((
+    h1: map-get($headings, 'h1') / 2.5,
+    h2: map-get($headings, 'h2') / 2.5,
+    h3: map-get($headings, 'h3') / 2.5,
+    h4: map-get($headings, 'h4') / 2.5,
+    h5: map-get($headings, 'h5') / 2.5,
+    p: map-get($headings, 'p') + 1,
+    span: map-get($headings, 'p') - 0.5
+), $line-heights);
+
+$frame-paddings: () !default;
+$frame-paddings: map-merge((
+  none: 0rem,
+  extra-small: 1rem,
+  small: 1.5rem,
+  medium: 2.5rem,
+  large: 3rem,
+  extra-large: 5rem
+), $frame-paddings);

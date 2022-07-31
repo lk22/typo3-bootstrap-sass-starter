@@ -1,0 +1,20 @@
+body {
+    color: $primary;
+    background: $default;
+}
+
+@include applyHeadings();
+@include applyContainerGrid();
+@include applyFrameSpacings();
+
+#page-header {
+    background: $default;
+
+    @include media-breakpoint-down(xl) {
+        background: green;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: red;
+    }
+}

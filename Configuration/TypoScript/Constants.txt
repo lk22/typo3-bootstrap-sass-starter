@@ -1,0 +1,31 @@
+plugin.bootstrap_package.view.layoutRootPath = EXT:custom_bootstrap_theme/Resources/Private/Layouts/
+plugin.bootstrap_package.view.partialRootPath = EXT:custom_bootstrap_theme/Resources/Private/Partials/
+plugin.bootstrap_package.view.templateRootPath = EXT:custom_bootstrap_theme/Resources/Private/Templates/
+
+plugin.bootstra_package_contentelements.view.layoutRootPath = EXT:custom_bootstrap_theme/Resources/Private/Layouts/ContentElements/
+plugin.bootstra_package_contentelements.view.partialRootPath = EXT:custom_bootstrap_theme/Resources/Private/Partials/ContentElements/
+plugin.bootstra_package_contentelements.view.templateRootPath = EXT:custom_bootstrap_theme/Resources/Private/Templates/ContentElements/
+
+page.fluidtemplate.layoutRootPath = EXT:custom_bootstrap_theme/Resources/Private/Layouts/Page/
+page.fluidtemplate.partialRootPath = EXT:custom_bootstrap_theme/Resources/Private/Partials/Page/
+page.fluidtemplate.templateRootPath = EXT:custom_bootstrap_theme/Resources/Private/Templates/Page/
+
+page.logo.file = 
+page.logo.fileInverted = 
+page.favicon.file = 
+page.theme.cookieconsent.position = bottom-left
+page.theme.cookieconsent.revokable = 1
+page.theme.cookieconsent.type = opt-in
+config.removeDefaultJS = external
+config.admPanel = 0
+config.headerComment = Website build with Custom Boostrap theme
+page.theme.copyright.enable = 0
+page.theme.language.enable = 0
+page.theme.breadcrumb.enableLevel = 1
+page.preloader.enable = 0
+
+page.theme.navigation.type = top
+page.theme.navigation.style = fixed
+page.logo.height = 30
+page.theme.googleFont.font = Nunito
+page.theme.googleFont.weight = 100,200,300,400,500,600,700,800,900

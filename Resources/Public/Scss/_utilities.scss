@@ -1,0 +1,41 @@
+/*
+* apply styling for each heading
+*/
+@mixin applyHeadings() {
+    @each $heading in map-keys($headings) {
+        #{$heading} {
+            font-size: map-get($headings, $heading);
+            line-height: map-get($line-heights, $heading);
+        }
+    }
+}
+
+/*
+* Utility helper to set custom breakpoints from overriden breakpoints
+*/
+@mixin applyContainerGrid() {
+    .container, .frame-container {
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                max-width: map-get($container-max-widths, $breakpoint)
+            }
+        }
+    }
+}
+
+/*
+* apply paddings utility on frames
+*/
+@mixin applyFrameSpacings() {
+    .frame {
+        @each $padding in map-keys($frame-paddings) {
+            &.frame-space-before-#{$padding} {
+                padding-top: map-get($frame-paddings, $padding);
+            }
+
+            &.frame-space-after-#{$padding} {
+                padding-bottom: map-get($frame-paddings, $padding);
+            }
+        }
+    }
+}

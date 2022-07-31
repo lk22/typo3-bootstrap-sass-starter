@@ -1,0 +1,7 @@
+page.includeCSS.theme = EXT:custom_bootstrap_theme/Resources/Public/Scss/theme.scss
+
+page.tx_bootstrap_package._LOCAL_LANG.da.cookieconsent\.common\.message = Dette website bruger cookies for at sikre dig den bedste brugeroplevelse
+page.tx_bootstrap_package._LOCAL_LANG.da.cookieconsent\.common\.dissmiss = Ok
+page.tx_bootstrap_package._LOCAL_LANG.da.cookieconsent\.common\.Allow = Tillad cookies
+page.tx_bootstrap_package._LOCAL_LANG.da.cookieconsent\.common\.deny = Afvis
+
